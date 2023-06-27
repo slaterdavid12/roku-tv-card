@@ -345,11 +345,11 @@ media_control_row:
 <img src="assets/empty_buttons.png" alt="empty buttons example" width="300"/>
 
 [last-commit-shield]: https://img.shields.io/github/last-commit/Nerwyn/android-tv-card?style=for-the-badge
-[commits]: https://github.com/Nerwyn/android-tv-card/commits/master
+[commits]: https://github.com/slaterdavid12/roku-tv-card/commits/master
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/t/lovelace-an-awesome-modified-tv-card-with-touchpad-and-haptic-feedback/432791
 [license-shield]: https://img.shields.io/github/license/Nerwyn/android-tv-card.svg?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/badge/maintainer-Nerwyn-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/Nerwyn/android-tv-card.svg?style=for-the-badge
-[releases]: https://github.com/nerwyn/android-tv-card/releases
+[releases]: https://github.com/slaterdavid12/roku-tv-card/releases
 [github]: https://img.shields.io/github/followers/Nerwyn.svg?style=social
