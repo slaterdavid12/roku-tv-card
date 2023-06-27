@@ -182,7 +182,7 @@ class TVCardServices extends LitElement {
 			command: key,
 		};
 		if (longPress) {
-			data.hold_secs = 1;
+			data.hold_secs = 0.2;
 		}
 		this._hass.callService('remote', 'send_command', data);
 	}
@@ -207,7 +207,7 @@ class TVCardServices extends LitElement {
 				JSON.stringify(info.service_data || {})
 			);
 			if (longPress) {
-				service_data.hold_secs = 1;
+				service_data.hold_secs = 0.2;
 			}
 			let [domain, service] = info.service.split('.', 2);
 			this._hass.callService(domain, service, service_data);
@@ -229,28 +229,7 @@ class TVCardServices extends LitElement {
 
 			this.fireHapticEvent(window, 'light');
 		};
-		if (this._config.enable_double_click) {
-			this.timer = setTimeout(click_action, 200);
-		} else {
 			click_action();
-		}
-	}
-
-	onDoubleClick(event) {
-		if (
-			this._config.enable_double_click !== undefined &&
-			!this._config.enable_double_click
-		)
-			return;
-
-		event.stopImmediatePropagation();
-
-		clearTimeout(this.timer);
-		this.timer = null;
-
-		this.sendKey(this._config.double_click_keycode ? this._config.double_click_keycode : "back");
-
-		this.fireHapticEvent(window, 'success');
 	}
 
 	onTouchStart(event) {
@@ -262,7 +241,7 @@ class TVCardServices extends LitElement {
 				this.sendAction('back', true);
 				this.fireHapticEvent(window, 'medium');
 			}
-		}, 1000);
+		}, 200);
 
 		window.initialX = event.touches[0].clientX;
 		window.initialY = event.touches[0].clientY;
@@ -321,13 +300,14 @@ class TVCardServices extends LitElement {
 				this.sendAction('back', true);
 				this.fireHapticEvent(window, 'medium');
 			}
-		}, 1000);
+		}, 200);
 	}
 
 	handleActionLongClickEnd(e) {
 		clearTimeout(this.timer);
 		clearTimeout(this.holdtimer);
 		clearInterval(this.holdinterval);
+		event.stopImmediatePropagation();
 
 		this.holdtimer = null;
 		this.timer = null;
