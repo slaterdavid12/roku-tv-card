@@ -241,7 +241,7 @@ class TVCardServices extends LitElement {
 				this.sendAction('back', true);
 				this.fireHapticEvent(window, 'medium');
 			}
-		}, 200);
+		}, 0);
 
 		window.initialX = event.touches[0].clientX;
 		window.initialY = event.touches[0].clientY;
@@ -300,7 +300,7 @@ class TVCardServices extends LitElement {
 				this.sendAction(holdaction, true);
 				this.fireHapticEvent(window, 'medium');
 			}
-		}, 50);
+		}, 0);
 	}
 
 	handleActionLongClickEnd(e) {
