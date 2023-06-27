@@ -1,5 +1,5 @@
 {
-	"name": "Roku Swipe Remote",
+	"name": "Roku TV Remote",
 	"content_in_root": true,
 	"homeassistant": "2023.5.0"
 }
