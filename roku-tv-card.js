@@ -235,13 +235,13 @@ class TVCardServices extends LitElement {
 	onTouchStart(event) {
 		event.stopImmediatePropagation();
 
-		//this.holdtimer = setTimeout(() => {
+		this.holdtimer = setTimeout(() => {
 			// Only repeat hold action for directional keys
-			 //{
-				//this.sendAction('back', true);
-				//this.fireHapticEvent(window, 'medium');
-			//}
-		//}, 50);
+			 {
+				this.sendAction('back', true);
+				this.fireHapticEvent(window, 'medium');
+			}
+		}, 50);
 
 		window.initialX = event.touches[0].clientX;
 		window.initialY = event.touches[0].clientY;
