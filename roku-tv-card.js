@@ -297,10 +297,10 @@ class TVCardServices extends LitElement {
 			// Only repeat hold action for directional keys and volume
 			// prettier-ignore
 			{
-				this.sendAction('back', true);
+				this.sendAction(holdaction, true);
 				this.fireHapticEvent(window, 'medium');
 			}
-		}, 200);
+		}, 50);
 	}
 
 	handleActionLongClickEnd(e) {
