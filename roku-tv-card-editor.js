@@ -183,4 +183,4 @@ export class TVCardEditor extends LitElement {
 	}
 }
 
-customElements.define('android-tv-card-editor', TVCardEditor)
+customElements.define('roku-tv-card-editor', RokuTVCardEditor)
