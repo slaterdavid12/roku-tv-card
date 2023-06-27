@@ -12,10 +12,10 @@ A fork of usernein's tv-card for the Home Assistant [Android TV Remote](https://
 Add this to your lovelace configuration:
 
 ```yaml
-type: custom:android-tv-card
-remote_id: remote.google_chromecast
-media_player_id: media_player.google_chromecast
-title: Example 2
+type: custom:roku-tv-card
+remote_id: remote.roku_living_room
+media_player_id: media_player.roku_living_room
+title: Roku Living Room
 power_row:
     - power
 channel_row:
