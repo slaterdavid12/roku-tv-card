@@ -262,7 +262,7 @@ class TVCardServices extends LitElement {
 				this.holdinterval = setInterval(() => {
 					this.sendAction('back');
 					this.fireHapticEvent(window, 'light');
-				}, 500);
+				}, 100);
 			}
 		}, 1000);
 
@@ -323,7 +323,7 @@ class TVCardServices extends LitElement {
 				this.holdinterval = setInterval(() => {
 					this.sendAction(this.holdaction);
 					this.fireHapticEvent(window, 'light');
-				}, 500);
+				}, 100);
 			}
 		}, 1000);
 	}
