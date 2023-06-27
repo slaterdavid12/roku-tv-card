@@ -8,8 +8,8 @@ const html = LitElement.prototype.html;
  * https://www.home-assistant.io/integrations/androidtv_remote/#remote
  */
 const keys = {
-	back: { key: 'back', icon: 'mdi:arrow-left' }
-	backspace: { key: 'backspace', icon: 'mdi: backspace-outline' }
+	back: { key: 'back', icon: 'mdi:arrow-left' },
+	backspace: { key: 'backspace', icon: 'mdi: backspace-outline' },
 	center: { key: 'select', icon: 'mdi:checkbox-blank-circle' },   
 	channel_down: { key: 'channel_down', icon: 'mdi:arrow-down-circle' },
 	channel_up: { key: 'channel_up', icon: 'mdi:arrow-up-circle' },
