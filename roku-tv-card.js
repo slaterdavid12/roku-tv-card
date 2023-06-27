@@ -318,18 +318,15 @@ class TVCardServices extends LitElement {
 	}
 
 	handleActionLongClick(e) {
-		this.holdaction = e.currentTarget.action;
+		this.holdaction = 'back';
 		this.holdtimer = setTimeout(() => {
 			// Only repeat hold action for directional keys and volume
 			// prettier-ignore
-			if (['up', 'down', 'left', 'right', 'volume_up', 'volume_down'].includes(this.holdaction)) {
+			{
 				this.holdinterval = setInterval(() => {
 					this.sendAction(this.holdaction);
 					this.fireHapticEvent(window, 'light');
 				}, 100);
-			} else {
-				this.sendAction(this.holdaction, true);
-				this.fireHapticEvent(window, 'medium');
 			}
 		}, 500);
 	}
