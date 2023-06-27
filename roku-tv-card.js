@@ -15,7 +15,7 @@ const keys = {
 	channel_up: { key: 'channel_up', icon: 'mdi:arrow-up-circle' },
 	down: { key: 'down', icon: 'mdi:chevron-down' },
 	enter: { key: 'enter', icon: 'mdi:arrow-left-bottom' },
-	find_remote: { key: 'find_remote', icon: 'mdi:'remote' },
+	find_remote: { key: 'find_remote', icon: 'mdi:remote' },
 	forward: { key: 'forward', icon: 'mdi:arrow-right' },
 	home: { key: 'home', icon: 'mdi:home' },
 	info: { key: 'info', icon: 'mdi:information-slab-circle-outline' },
