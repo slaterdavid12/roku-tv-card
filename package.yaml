@@ -1,6 +1,6 @@
-name: Android TV Card
-description: 📺 Android TV Remote Card
-version: 1.2.1
+name: Roku TV Card
+description: Roku Swipe Card
+version: 0.0.1
 type: lovelace
 keywords:
   - androidtv
@@ -12,11 +12,12 @@ keywords:
   - tv
   - television
 author:
-  name: mar_robHD
+  name: slaterdavid12
 contributors:
   - name: usernein
   - name: Nerwyn
+  - name: mar_robHD
 license: Apache License, Version 2.0
 files:
-  - android-tv-card.js
-  - android-tv-card-editor.js
+  - roku-tv-card.js
+  - roku-tv-card-editor.js
