@@ -1,4 +1,4 @@
-# Android TV Remote Card (with touchpad and haptic feedback)
+# Roku TV Remote Card (with touchpad and haptic feedback)
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
