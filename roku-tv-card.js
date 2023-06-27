@@ -248,10 +248,7 @@ class TVCardServices extends LitElement {
 		clearTimeout(this.timer);
 		this.timer = null;
 
-		action = this._config.double_click_keycode
-			? this._config.double_click_keycode
-			: 'back';
-		this.sendAction(action);
+		this.sendKey(this._config.double_click_keycode ? this._config.double_click_keycode : "back");
 
 		this.fireHapticEvent(window, 'success');
 	}
