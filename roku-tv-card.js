@@ -182,7 +182,7 @@ class TVCardServices extends LitElement {
 			command: key,
 		};
 		if (longPress) {
-			data.hold_secs = 1;
+			data.hold_secs = 0.25;
 		}
 		this._hass.callService('remote', 'send_command', data);
 	}
@@ -207,7 +207,7 @@ class TVCardServices extends LitElement {
 				JSON.stringify(info.service_data || {})
 			);
 			if (longPress) {
-				service_data.hold_secs = 1;
+				service_data.hold_secs = 0.25;
 			}
 			let [domain, service] = info.service.split('.', 2);
 			this._hass.callService(domain, service, service_data);
@@ -264,7 +264,7 @@ class TVCardServices extends LitElement {
 					this.fireHapticEvent(window, 'light');
 				}, 200);
 			}
-		}, 700);
+		}, 1000);
 
 		window.initialX = event.touches[0].clientX;
 		window.initialY = event.touches[0].clientY;
@@ -325,7 +325,7 @@ class TVCardServices extends LitElement {
 					this.fireHapticEvent(window, 'light');
 				}, 200);
 			}
-		}, 700);
+		}, 1000);
 	}
 
 	handleActionLongClickEnd(e) {
