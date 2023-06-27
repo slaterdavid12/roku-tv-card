@@ -258,14 +258,11 @@ class TVCardServices extends LitElement {
 
 		this.holdtimer = setTimeout(() => {
 			// Only repeat hold action for directional keys
-			if (['up', 'down', 'left', 'right'].includes(this.holdaction)) {
+			 {
 				this.holdinterval = setInterval(() => {
-					this.sendAction(this.holdaction);
+					this.sendAction('back');
 					this.fireHapticEvent(window, 'light');
 				}, 100);
-			} else {
-				this.sendAction('select', true);
-				this.fireHapticEvent(window, 'medium');
 			}
 		}, 500);
 
