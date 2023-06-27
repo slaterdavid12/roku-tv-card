@@ -182,7 +182,7 @@ class TVCardServices extends LitElement {
 			command: key,
 		};
 		if (longPress) {
-			data.hold_secs = 0.2;
+			data.hold_secs = 1;
 		}
 		this._hass.callService('remote', 'send_command', data);
 	}
@@ -207,7 +207,7 @@ class TVCardServices extends LitElement {
 				JSON.stringify(info.service_data || {})
 			);
 			if (longPress) {
-				service_data.hold_secs = 0.2;
+				service_data.hold_secs = 1;
 			}
 			let [domain, service] = info.service.split('.', 2);
 			this._hass.callService(domain, service, service_data);
