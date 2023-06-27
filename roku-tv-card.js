@@ -41,18 +41,9 @@ const keys = {
 };
 
 const sources = {
-	apple_tv: { source: 'Apple TV', icon: 'mdi:apple' },
-	disney_plus: { source: 'Disney Plus', icon: 'mdi:disney' },
-	espn: { source: 'ESPN', icon: 'mdi:espn' },
-	hdhomerun: { source: 'HDHomeRun', icon: 'mdi:hdhomerun' },
-	hulu: { source: 'hulu', icon: 'mdi:hulu' },
-	max: { source: 'Max', icon: 'mdi:max' },
 	netflix: { source: 'Netflix', icon: 'mdi:netflix' },
-	plex: { source: 'Plex - Free Movies & TV', icon: 'mdi:plex' },
-	prime: { source: 'Prime Video', icon: 'mdi:prime' },
 	spotify: { source: 'Spotify', icon: 'mdi:spotify' },
 	youtube: { source: 'YouTube', icon: 'mdi:youtube' },
-	youtube_tv: {source: 'YouTube TV', icon: 'mdi:youtubetv' },
 };
 
 var fireEvent = function (node, type, detail, options) {
