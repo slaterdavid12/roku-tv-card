@@ -1,4 +1,4 @@
-# Android TV Remote Card
+# Roku TV Remote Card
 
 A fork of usernein's tv-card for the Home Assistant [Android TV Remote](https://www.home-assistant.io/integrations/androidtv_remote/) integration. This fork also:
 
