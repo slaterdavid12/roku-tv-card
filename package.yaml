@@ -1,12 +1,9 @@
-name: Roku TV Card
-description: Roku TV Card
-version: 0.0.2
+name: Roku TV Swipe Card
+description: Roku TV Swipe Card
+version: 0.0.4
 type: lovelace
 keywords:
-  - androidtv
-  - android
-  - googletv
-  - google
+  - roku
   - tvcard
   - remote
   - tv
