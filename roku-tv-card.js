@@ -581,4 +581,4 @@ class TVCardServices extends LitElement {
 	}
 }
 
-customElements.define('android-tv-card', TVCardServices);
+customElements.define('roku-tv-card', TVCardServices);
