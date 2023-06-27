@@ -24,7 +24,7 @@ const keys = {
 	input_hdmi2: { key: 'input_hdmi2', icon: 'mdi:video-input-hdmi' },   
 	input_hdmi3: { key: 'input_hdmi3', icon: 'mdi:video-input-hdmi' },   
 	input_hdmi4: { key: 'input_hdmi4', icon: 'mdi:video-input-hdmi' },   
-	input_tuner: { key: 'input_tuner', icon: 'television-classic' },   	      
+	input_tuner: { key: 'input_tuner', icon: 'mdi:television-classic' },   	      
 	left: { key: 'left', icon: 'mdi:chevron-left' },
 	literal: { key: 'literal', icon: 'mdi:alert-circle-outline' },
 	play: { key: 'play', icon: 'mdi:play' },
