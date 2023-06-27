@@ -10,7 +10,6 @@ const html = LitElement.prototype.html;
 const keys = {
 	back: { key: 'back', icon: 'mdi:arrow-left' },
 	backspace: { key: 'backspace', icon: 'mdi: backspace-outline' },
-	center: { key: 'select', icon: 'mdi:checkbox-blank-circle' },   
 	channel_down: { key: 'channel_down', icon: 'mdi:arrow-down-circle' },
 	channel_up: { key: 'channel_up', icon: 'mdi:arrow-up-circle' },
 	down: { key: 'down', icon: 'mdi:chevron-down' },
@@ -225,7 +224,7 @@ class TVCardServices extends LitElement {
 	onClick(event) {
 		event.stopImmediatePropagation();
 		let click_action = () => {
-			let action = 'center';
+			let action = 'select';
 			this.sendAction(action);
 
 			this.fireHapticEvent(window, 'light');
@@ -268,7 +267,7 @@ class TVCardServices extends LitElement {
 					this.fireHapticEvent(window, 'light');
 				}, 100);
 			} else {
-				this.sendAction('center', true);
+				this.sendAction('select', true);
 				this.fireHapticEvent(window, 'medium');
 			}
 		}, 500);
@@ -425,7 +424,7 @@ class TVCardServices extends LitElement {
 						let up_row = [this.buildIconButton('up')];
 						let middle_row = [
 							this.buildIconButton('left'),
-							this.buildIconButton('center'),
+							this.buildIconButton('select'),
 							this.buildIconButton('right'),
 						];
 						let down_row = [this.buildIconButton('down')];
